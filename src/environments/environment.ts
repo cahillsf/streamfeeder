@@ -3,8 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  clientId: "dYAh8NZqS6KCQQ",
+  apiState: "1234",
+  redirect: "http://localhost:8100/",
+  duration: "temporary",
+  scope: "identity,edit,flair,history,mysubreddits"
 };
+
+
 
 /*
  * For easier debugging in development mode, you can import the following file
