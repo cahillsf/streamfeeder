@@ -1,9 +1,12 @@
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>{{ folder }}</ion-title>
+    <ion-title id="topName">{{ folder2 }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -18,5 +21,9 @@
     <strong class="capitalize">{{ folder }}</strong>
     <p>Explore <a rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
     <ion-button id="helloButton" href="http://www.google.com" target="_self">Hello Team 5, sup?</ion-button>
+    <ion-button id="authButton" (click)="authorizeApp()">App auth</ion-button>
+    <ion-button (click)="testExpress()" >Testing</ion-button>
+
+    <ion-button (click)="testExpress2()" >Testing2</ion-button>
   </div>
 </ion-content>
