@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute, Router} from '@angular/router';
-import {environment} from '../../environments/environment';
-import { Observable } from 'rxjs';
-import {HttpClient, HttpClientModule} from '@angular/common/http';
-import {AuthenticationService} from '../services/authentication.service';
+import { ActivatedRoute } from '@angular/router';
+import {environment} from '../../environments/environment'
+import { Observable } from 'rxjs'
+import {HttpClient, HttpClientModule} from '@angular/common/http'
 
 @Component({
   selector: 'app-folder',
@@ -14,16 +13,12 @@ export class FolderPage implements OnInit {
   public folder: string;
   public channel: Observable<any>; 
 
-  constructor(private authService: AuthenticationService, private router: Router, private activatedRoute: ActivatedRoute, private httpClient: HttpClient) {
+  constructor(private activatedRoute: ActivatedRoute, private httpClient: HttpClient) {
     this.channel = this.httpClient.get('http://localhost:3000/subreddits/popular')
     this.channel.subscribe(data => {
       console.log('my data: ', data);
     })
    }
-  async logout() {
-    await this.authService.logout();
-    this.router.navigateByUrl('/', { replaceUrl: true });
-  }
 
   ngOnInit() {
     this.folder = this.activatedRoute.snapshot.paramMap.get('id');
