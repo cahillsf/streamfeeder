@@ -16,14 +16,31 @@
       <ion-title size="large">{{ folder }}</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
     <ion-button id="helloButton" href="http://www.google.com" target="_self">Hello Team 5, sup?</ion-button>
     <ion-button id="authButton" (click)="authorizeApp()">App auth</ion-button>
     <ion-button (click)="testExpress()" >Testing</ion-button>
 
-    <ion-button (click)="testExpress2()" >Testing2</ion-button>
-  </div>
+    <ion-button (click)="testExpress2()">Testing2</ion-button>
+    <ion-button (click)="getData()" >Get Data</ion-button>
+    
+    <ion-grid>
+      <ion-item-group *ngIf="bool2">
+        <ion-item *ngFor="let p of posts">
+          <ion-card>  
+            <ion-card-header>
+              <ion-card-title>
+                {{ p['data']['title'] }}
+              </ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              {{ p['data']['shortText'] }}
+              <ng-container *ngIf="p['data']['hasPreview']">
+                <img src="{{p['data']['thumbnail']}}">
+              </ng-container> 
+              
+            </ion-card-content>
+          </ion-card>
+        </ion-item>
+      </ion-item-group>
+    </ion-grid>
 </ion-content>
