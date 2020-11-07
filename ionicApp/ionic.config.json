@@ -1,5 +1,7 @@
 {
   "name": "streamfeeder",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

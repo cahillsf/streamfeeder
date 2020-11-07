@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="72ae788c-0806-4694-9326-ca4ec0cbcf3c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ionicApp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capacitor.config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.bin/cap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.bin/capacitor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/build/.npmkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/java/com/getcapacitor/myapp/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/drawable-land-hdpi/splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/drawable-land-mdpi/splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/drawable-land-xhdpi/splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/drawable-land-xxhdpi/splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/drawable-land-xxxhdpi/splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/drawable-port-hdpi/splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/drawable-port-mdpi/splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/drawable-port-xhdpi/splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/drawable-port-xxhdpi/splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/drawable-port-xxxhdpi/splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/drawable/splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/values/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/main/res/xml/file_paths.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/build/android-profile/profile-2018-01-30-18-37-02-854.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/build/android-profile/profile-2018-01-30-18-37-02-854.rawproto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/build/android-profile/profile-2018-01-30-19-34-50-973.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/build/android-profile/profile-2018-01-30-19-34-50-973.rawproto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/android-template/variables.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/app-template/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/app-template/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/app-template/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/app-template/www/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/app-template/www/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/app-template/www/js/capacitor-welcome.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/app-template/www/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/capacitor-cordova-android-plugins/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/capacitor-cordova-android-plugins/src/main/java/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/capacitor-cordova-android-plugins/src/main/res/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/capacitor-cordova-ios-plugins/CordovaPluginsResources.podspec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/capacitor-cordova-ios-plugins/resources/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/capacitor-cordova-ios-plugins/sources/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/electron-template/gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/electron-template/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/electron-template/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/electron-template/splash_assets/splash.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/electron-template/splash_assets/splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App.xcodeproj/project.pbxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App/AppDelegate.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-20x20@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-20x20@2x-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-20x20@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-20x20@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-29x29@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-29x29@2x-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-29x29@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-29x29@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-40x40@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-40x40@2x-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-40x40@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-40x40@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-512@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-60x60@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-60x60@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-76x76@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-76x76@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-83.5x83.5@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App/Assets.xcassets/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App/Assets.xcassets/Splash.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App/Assets.xcassets/Splash.imageset/splash-2732x2732-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App/Assets.xcassets/Splash.imageset/splash-2732x2732-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App/Assets.xcassets/Splash.imageset/splash-2732x2732.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App/Base.lproj/LaunchScreen.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App/Base.lproj/Main.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App/capacitor.config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/App/config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/Podfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/App/public/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/ios-template/gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/plugin-template/.prettierignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/plugin-template/android/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/plugin-template/android/Plugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/plugin-template/android/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/plugin-template/android/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/plugin-template/android/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/plugin-template/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/plugin-template/android/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/plugin-template/android/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/plugin-template/android/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/plugin-template/android/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/plugin-template/android/src/androidTest/java/com/getcapacitor/android/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/plugin-template/android/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/plugin-template/android/src/main/res/layout/bridge_layout_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/plugin-template/android/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/plugin-template/android/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/plugin-template/android/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/plugin-template/android/src/test/java/com/getcapacitor/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/plugin-template/gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/plugin-template/ios/Plugin.xcodeproj/project.pbxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/plugin-template/ios/Plugin/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/plugin-template/ios/Plugin/Plugin.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/plugin-template/ios/Plugin/Plugin.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/plugin-template/ios/Plugin/Plugin.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/plugin-template/ios/PluginTests/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/plugin-template/ios/PluginTests/PluginTests.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/plugin-template/ios/Podfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/plugin-template/rollup.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/plugin-template/src/definitions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/plugin-template/src/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/plugin-template/src/web.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/assets/plugin-template/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/bin/capacitor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/android/add.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/android/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/android/doctor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/android/open.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/android/update.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/cordova.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/definitions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/electron/add.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/electron/copy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/electron/doctor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/electron/open.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/ios/add.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/ios/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/ios/doctor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/ios/open.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/ios/update.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/tasks/add.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/tasks/copy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/tasks/create.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/tasks/doctor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/tasks/init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/tasks/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/tasks/new-plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/tasks/open.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/tasks/serve.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/tasks/sync.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/tasks/update.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/util/emoji.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/util/fs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/util/promise.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/util/term.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/web/copy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/dist/web/serve.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/.bin/semver" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/ansi-escapes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/ansi-escapes/license" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/ansi-escapes/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/ansi-escapes/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/ansi-regex/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/ansi-regex/license" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/ansi-regex/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/ansi-regex/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/cli-cursor/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/cli-cursor/license" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/cli-cursor/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/cli-cursor/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/cli-spinners/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/cli-spinners/license" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/cli-spinners/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/cli-spinners/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/cli-spinners/spinners.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/commander/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/commander/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/commander/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/commander/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/commander/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/commander/typings/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/figures/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/figures/license" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/figures/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/figures/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/docs/copy-sync.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/docs/copy.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/docs/emptyDir-sync.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/docs/emptyDir.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/docs/ensureDir-sync.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/docs/ensureDir.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/docs/ensureFile-sync.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/docs/ensureFile.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/docs/ensureLink-sync.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/docs/ensureLink.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/docs/ensureSymlink-sync.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/docs/ensureSymlink.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/docs/fs-read-write.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/docs/move-sync.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/docs/move.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/docs/outputFile-sync.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/docs/outputFile.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/docs/outputJson-sync.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/docs/outputJson.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/docs/pathExists-sync.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/docs/pathExists.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/docs/readJson-sync.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/docs/readJson.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/docs/remove-sync.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/docs/remove.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/docs/writeJson-sync.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/docs/writeJson.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/lib/copy-sync/copy-file-sync.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/lib/copy-sync/copy-sync.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/lib/copy-sync/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/lib/copy/copy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/lib/copy/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/lib/copy/ncp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/lib/empty/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/lib/ensure/file.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/lib/ensure/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/lib/ensure/link.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/lib/ensure/symlink-paths.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/lib/ensure/symlink-type.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/lib/ensure/symlink.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/lib/fs/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/lib/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/lib/json/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/lib/json/jsonfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/lib/json/output-json-sync.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/lib/json/output-json.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/lib/mkdirs/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/lib/mkdirs/mkdirs-sync.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/lib/mkdirs/mkdirs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/lib/mkdirs/win32.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/lib/move-sync/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/lib/move/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/lib/output/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/lib/path-exists/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/lib/remove/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/lib/remove/rimraf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/lib/util/assign.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/lib/util/buffer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/lib/util/utimes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/inquirer/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/inquirer/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/inquirer/lib/inquirer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/inquirer/lib/objects/choice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/inquirer/lib/objects/choices.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/inquirer/lib/objects/separator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/inquirer/lib/prompts/base.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/inquirer/lib/prompts/checkbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/inquirer/lib/prompts/confirm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/inquirer/lib/prompts/editor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/inquirer/lib/prompts/expand.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/inquirer/lib/prompts/input.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/inquirer/lib/prompts/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/inquirer/lib/prompts/number.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/inquirer/lib/prompts/password.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/inquirer/lib/prompts/rawlist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/inquirer/lib/ui/baseUI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/inquirer/lib/ui/bottom-bar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/inquirer/lib/ui/prompt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/inquirer/lib/utils/events.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/inquirer/lib/utils/paginator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/inquirer/lib/utils/readline.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/inquirer/lib/utils/screen-manager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/inquirer/lib/utils/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/inquirer/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/is-wsl/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/is-wsl/license" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/is-wsl/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/is-wsl/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/log-symbols/browser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/log-symbols/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/log-symbols/license" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/log-symbols/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/log-symbols/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/mimic-fn/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/mimic-fn/license" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/mimic-fn/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/mimic-fn/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/mute-stream/.nyc_output/33508.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/mute-stream/.nyc_output/33510.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/mute-stream/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/mute-stream/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/mute-stream/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/mute-stream/coverage/lcov-report/__root__/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/mute-stream/coverage/lcov-report/__root__/mute.js.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/mute-stream/coverage/lcov-report/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/mute-stream/coverage/lcov-report/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/mute-stream/coverage/lcov-report/prettify.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/mute-stream/coverage/lcov-report/prettify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/mute-stream/coverage/lcov-report/sort-arrow-sprite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/mute-stream/coverage/lcov-report/sorter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/mute-stream/coverage/lcov.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/mute-stream/mute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/mute-stream/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/mute-stream/test/basic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/onetime/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/onetime/license" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/onetime/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/onetime/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/open/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/open/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/open/license" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/open/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/open/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/open/xdg-open" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/ora/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/ora/license" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/ora/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/ora/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/restore-cursor/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/restore-cursor/license" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/restore-cursor/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/restore-cursor/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/semver/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/semver/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/semver/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/semver/bin/semver" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/semver/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/semver/range.bnf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/semver/semver.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/string-width/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/string-width/license" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/string-width/node_modules/strip-ansi/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/string-width/node_modules/strip-ansi/license" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/string-width/node_modules/strip-ansi/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/string-width/node_modules/strip-ansi/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/string-width/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/string-width/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/strip-ansi/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/strip-ansi/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/strip-ansi/license" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/strip-ansi/node_modules/ansi-regex/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/strip-ansi/node_modules/ansi-regex/license" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/strip-ansi/node_modules/ansi-regex/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/strip-ansi/node_modules/ansi-regex/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/strip-ansi/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/strip-ansi/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/cordova.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/capacitor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/capacitor.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/core-plugin-definitions.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/core-plugin-definitions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/core-plugin-definitions.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/definitions.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/definitions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/definitions.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/global.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/global.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/global.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/index.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/util.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/util.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web-plugins.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web-plugins.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web-plugins.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web-runtime.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web-runtime.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web-runtime.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/accessibility.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/accessibility.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/accessibility.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/app.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/app.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/browser.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/browser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/browser.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/camera.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/camera.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/camera.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/clipboard.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/clipboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/clipboard.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/device.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/device.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/device.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/filesystem.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/filesystem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/filesystem.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/geolocation.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/geolocation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/geolocation.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/index.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/local-notifications.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/local-notifications.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/local-notifications.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/modals.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/modals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/modals.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/motion.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/motion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/motion.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/network.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/network.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/network.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/permissions.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/permissions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/permissions.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/share.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/share.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/share.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/splash-screen.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/splash-screen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/splash-screen.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/storage.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/storage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/storage.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/toast.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/toast.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/esm/web/toast.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/dist/index.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/native-bridge.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/node_modules/tslib/CopyrightNotice.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/node_modules/tslib/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/node_modules/tslib/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/node_modules/tslib/modules/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/node_modules/tslib/modules/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/node_modules/tslib/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/node_modules/tslib/test/validateModuleExportsMatchCommonJS/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/node_modules/tslib/test/validateModuleExportsMatchCommonJS/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/node_modules/tslib/tslib.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/node_modules/tslib/tslib.es6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/node_modules/tslib/tslib.es6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/node_modules/tslib/tslib.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/node_modules/tslib/tslib.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/compare-versions/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/compare-versions/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/compare-versions/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/compare-versions/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/compare-versions/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/compare-versions/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/.jshintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/History.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/dist/plist-build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/dist/plist-parse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/dist/plist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/examples/browser/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/lib/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/lib/parse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/node_modules/xmlbuilder/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/node_modules/xmlbuilder/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/node_modules/xmlbuilder/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/node_modules/xmlbuilder/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/node_modules/xmlbuilder/lib/Utility.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/node_modules/xmlbuilder/lib/XMLAttribute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/node_modules/xmlbuilder/lib/XMLCData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/node_modules/xmlbuilder/lib/XMLComment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/node_modules/xmlbuilder/lib/XMLDTDAttList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/node_modules/xmlbuilder/lib/XMLDTDElement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/node_modules/xmlbuilder/lib/XMLDTDEntity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/node_modules/xmlbuilder/lib/XMLDTDNotation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/node_modules/xmlbuilder/lib/XMLDeclaration.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/node_modules/xmlbuilder/lib/XMLDocType.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/node_modules/xmlbuilder/lib/XMLDocument.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/node_modules/xmlbuilder/lib/XMLDocumentCB.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/node_modules/xmlbuilder/lib/XMLElement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/node_modules/xmlbuilder/lib/XMLNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/node_modules/xmlbuilder/lib/XMLProcessingInstruction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/node_modules/xmlbuilder/lib/XMLRaw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/node_modules/xmlbuilder/lib/XMLStreamWriter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/node_modules/xmlbuilder/lib/XMLStringWriter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/node_modules/xmlbuilder/lib/XMLStringifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/node_modules/xmlbuilder/lib/XMLText.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/node_modules/xmlbuilder/lib/XMLWriterBase.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/node_modules/xmlbuilder/lib/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/node_modules/xmlbuilder/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/plist/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xmldom/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xmldom/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xmldom/__package__.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xmldom/changelog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xmldom/component.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xmldom/dom-parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xmldom/dom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xmldom/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xmldom/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xmldom/sax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/guards/auth.guard.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/guards/auth.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/pages/login/login-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/pages/login/login.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/pages/login/login.page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/pages/login/login.page.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/pages/login/login.page.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/pages/login/login.page.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/services/authentication.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/services/authentication.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ionic.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/ionic.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/__ngcc_entry_points__.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/__ngcc_entry_points__.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/folder/folder.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/folder/folder.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/folder/folder.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/folder/folder.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/variables.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1jxn0UYrLKq54SvdRo0t822ZIgd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="Tests (app)" type="JavaScriptTestRunnerKarma">
+      <config-file value="$PROJECT_DIR$/karma.conf.js" />
+      <working-directory value="$PROJECT_DIR$" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="E2E Tests (app)" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="72ae788c-0806-4694-9326-ca4ec0cbcf3c" name="Default Changelist" comment="" />
+      <created>1604754389336</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604754389336</updated>
+      <workItem from="1604754391347" duration="3908000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="795" y="246" key="RollbackChangesDialog" timestamp="1604757020093">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="795" y="246" key="RollbackChangesDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1604757020093" />
+  </component>
+</project>
