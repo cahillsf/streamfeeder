@@ -1,5 +1,7 @@
 CREATE DATABASE streamfeeder
 
+USE streamfeeder;
+
 CREATE TABLE user(
     UserID INT NOT NULL,
     Password VARCHAR(25) NOT NULL,
