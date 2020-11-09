@@ -8,7 +8,8 @@ export const environment = {
   apiState: "1234",
   redirect: "http://localhost:8100/",
   duration: "temporary",
-  scope: "identity,edit,flair,history,mysubreddits"
+  scope: "identity,edit,flair,history,mysubreddits",
+  clientSecret: "qWWPwMivu9fDtKEpjmb1H1Y7HXU"
 };
 
 

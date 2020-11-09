@@ -16,17 +16,8 @@
       <ion-title size="large">{{ folder }}</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-button expand="full" (click)="logout()">Logout</ion-button>
+    
 
-  <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-    <ion-button id="helloButton" href="http://www.google.com" target="_self">Hello Team 5, sup?</ion-button>
-    <ion-button id="authButton" (click)="authorizeApp()">App auth</ion-button>
-    <ion-button (click)="testExpress()" >Testing</ion-button>
 
-    <ion-button (click)="testExpress2()" >Testing2</ion-button>
-
-    <ion-button expand="full" (click)="logout()">Logout</ion-button>
-
-  </div>
 </ion-content>

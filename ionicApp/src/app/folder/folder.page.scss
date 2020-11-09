@@ -1,5 +1,35 @@
+* {
+  font-family: 'Quicksand';
+}
+
+#topName{
+  font-family: 'Permanent Marker', cursive;
+  font-weight: bold;
+  font-size: 2em;
+}
+
 ion-menu-button {
   color: var(--ion-color-primary);
+}
+
+ion-content{
+  text-align: center;
+}
+ion-content strong{
+  font-size: 20px;
+  line-height: 26px;
+}
+
+ion-card{
+  width: 100%;
+}
+ion-list{
+  text-align: center;
+  justify-content: center;
+}
+ion-item{
+  justify-content: center;
+  text-align: center;
 }
 
 #container {

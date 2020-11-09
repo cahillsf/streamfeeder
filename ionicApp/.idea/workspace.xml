@@ -20,60 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72ae788c-0806-4694-9326-ca4ec0cbcf3c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/guards/auth.guard.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/guards/auth.guard.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/login/login-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/login/login.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/login/login.page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/login/login.page.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/login/login.page.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/login/login.page.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/authentication.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/authentication.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ionicApp.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/capacitor.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/capacitor.config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ionic.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/ionic.config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/ansi-escapes/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/ansi-escapes/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/ansi-regex/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/ansi-regex/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/cli-cursor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/cli-cursor/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/cli-spinners/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/cli-spinners/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/commander/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/commander/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/figures/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/figures/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/fs-extra/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/inquirer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/inquirer/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/is-wsl/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/is-wsl/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/log-symbols/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/log-symbols/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/mimic-fn/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/mimic-fn/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/mute-stream/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/mute-stream/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/onetime/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/onetime/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/open/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/open/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/ora/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/ora/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/restore-cursor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/restore-cursor/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/semver/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/semver/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/string-width/node_modules/strip-ansi/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/string-width/node_modules/strip-ansi/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/string-width/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/string-width/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/strip-ansi/node_modules/ansi-regex/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/strip-ansi/node_modules/ansi-regex/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/strip-ansi/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/node_modules/strip-ansi/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@capacitor/cli/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@capacitor/cli/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@capacitor/core/node_modules/tslib/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/node_modules/tslib/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@capacitor/core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@capacitor/core/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/compare-versions/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/compare-versions/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/plist/node_modules/xmlbuilder/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/plist/node_modules/xmlbuilder/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/plist/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/plist/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/xmldom/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/xmldom/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/__ngcc_entry_points__.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/__ngcc_entry_points__.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/folder/folder.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/folder/folder.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/folder/folder.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/folder/folder.page.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/folder/folder.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/folder/folder.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/variables.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +52,6 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -148,7 +104,8 @@
       <option name="presentableId" value="Default" />
       <updated>1604754389336</updated>
       <workItem from="1604754391347" duration="3908000" />
-      <workItem from="1604781570948" duration="2304000" />
+      <workItem from="1604781570948" duration="3934000" />
+      <workItem from="1604888847080" duration="1584000" />
     </task>
     <task id="LOCAL-00001" summary="Login page demo">
       <created>1604781812887</created>
@@ -185,25 +142,25 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Login page demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login page demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1659" height="295" key="GridCell.Tab.0.bottom" timestamp="1604783572476">
+    <state width="1659" height="295" key="GridCell.Tab.0.bottom" timestamp="1604789291884">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1659" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1604783572476" />
-    <state width="1659" height="295" key="GridCell.Tab.0.center" timestamp="1604783572475">
+    <state width="1659" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1604789291884" />
+    <state width="1659" height="295" key="GridCell.Tab.0.center" timestamp="1604789291883">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1659" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1604783572475" />
-    <state width="1659" height="295" key="GridCell.Tab.0.left" timestamp="1604783572474">
+    <state width="1659" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1604789291883" />
+    <state width="1659" height="295" key="GridCell.Tab.0.left" timestamp="1604789291882">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1659" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1604783572474" />
-    <state width="1659" height="295" key="GridCell.Tab.0.right" timestamp="1604783572476">
+    <state width="1659" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1604789291882" />
+    <state width="1659" height="295" key="GridCell.Tab.0.right" timestamp="1604789291884">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1659" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1604783572476" />
+    <state width="1659" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1604789291884" />
     <state x="795" y="246" key="RollbackChangesDialog" timestamp="1604757020093">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
