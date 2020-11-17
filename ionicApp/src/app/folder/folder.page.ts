@@ -89,7 +89,7 @@ export class FolderPage implements OnInit {
       (response) => {
         console.log("Successful response to authorization grant ");
         console.log(response);
-        this.userAppAuth = response["access_token"];
+        this.appAuth = response["access_token"];
         console.log("Pulling out the access token: " + this.appAuth);
         this.getData();
       },
@@ -115,7 +115,7 @@ export class FolderPage implements OnInit {
       (response) => {
         console.log("Successful response to user authorization grant ");
         console.log(response);
-        this.appAuth = response["access_token"];
+        this.userAppAuth = response["access_token"];
         console.log("Pulling out the access token: " + this.appAuth);
         //this.getData();
       },
