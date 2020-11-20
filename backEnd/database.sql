@@ -7,7 +7,7 @@ CREATE TABLE user(
     Lname VARCHAR(25) NOT NULL,
     Email VARCHAR(100) NOT NULL,
     PRIMARY KEY(UserID)
-)
+);
 
 CREATE TABLE socialmediaplatforms(
     PlatformID INT,
@@ -17,7 +17,7 @@ CREATE TABLE socialmediaplatforms(
     PRIMARY KEY(PlatformID),
     FOREIGN KEY (UserID)
         REFERENCES user(UserID)
-)
+);
 
 CREATE TABLE settings(
     SettingsID INT,
@@ -28,7 +28,7 @@ CREATE TABLE settings(
     PRIMARY KEY(SettingsID),
     FOREIGN KEY (UserID)
         REFERENCES user(UserID)
-)
+);
 
 CREATE TABLE paymentinfo(
     CardID INT,
@@ -39,5 +39,5 @@ CREATE TABLE paymentinfo(
     Address VARCHAR(100),
     PRIMARY KEY(CardID),
     FOREIGN KEY (UserID)
-        REFERENCES (UserID)
-)
+        REFERENCES user(UserID)
+);
