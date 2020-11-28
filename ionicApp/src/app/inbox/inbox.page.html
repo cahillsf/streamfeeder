@@ -1,0 +1,38 @@
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title id="topName">{{ folder2 }}</ion-title>
+    <ion-buttons slot="end" color="secondary">
+      <ion-button color="primary" fill="outline" [routerLink]="['/login']">Login</ion-button>
+      <ion-button color="primary" fill="outline" id="redditLogin">Reddit Login</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-grid>
+    <ion-item-group *ngIf="gotMessages">
+      <h>hello</h>
+      <ion-item *ngFor="let m of messages">
+        <ion-card>  
+          <ion-card-header>
+            <ion-card-title>
+              {{ m['data']['subject'] }}
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+              {{ m['data']['body']}}
+            <ng-container *ngIf="">
+              
+            </ng-container> 
+            
+          </ion-card-content>
+        </ion-card>
+      </ion-item>
+    </ion-item-group>
+  </ion-grid>
+</ion-content>
