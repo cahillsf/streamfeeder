@@ -4,6 +4,7 @@ import {environment} from '../../environments/environment'
 import { Observable, Subscription } from 'rxjs'
 import {HttpClient, HttpClientModule, HttpHeaders} from '@angular/common/http'
 import { IonButton } from '@ionic/angular';
+import { RedditServiceService } from '../services/reddit-service.service';
 
 
 @Component({
@@ -30,12 +31,12 @@ export class FolderPage implements OnInit {
   
   @ViewChild('helloBut') helloButton: IonButton;
 
-  constructor(private router: Router, private activatedRoute: ActivatedRoute, private httpClient: HttpClient) {
+  constructor(private router: Router, private activatedRoute: ActivatedRoute, private httpClient: HttpClient, public redditService: RedditServiceService) {
     // this.channel = this.httpClient.get('http://localhost:3000/subreddits/popular')
     // this.channel.subscribe(data => {
     //   console.log('my data: ', data);
     // })
-    
+
     this.bool = false;
     this.authorizeApp();
     this.refreshSubscription = router.events.subscribe((event) => {
@@ -53,10 +54,13 @@ export class FolderPage implements OnInit {
     this.burritos = [{name: 'Burrito1', url: '../../assets/burrito1.jpeg'}, {name: 'Burrito2', url: '../../assets/burrito2.jpeg'}];
     this.folder = "Streamfeeder";
     this.folder2 = "STREAMFEEDER";
+
+    //link to my login button - passes the scope I'm requesting along with app client ID and a few other security related parameters
     let urlString: string = "https://www.reddit.com/api/v1/authorize.compact?client_id=" + environment.clientId + "&response_type=code&state=" + environment.apiState + "&redirect_uri=" + environment.redirect + "&duration=" + environment.duration + "&scope=" + environment.scope
     var helloButton = (<HTMLAnchorElement>document.getElementById("helloButton"));
     helloButton.href = urlString;
-
+    let redditLogin = (<HTMLAnchorElement>document.getElementById("redditLogin"));
+    redditLogin.href = urlString;
   }
 
   testExpress(){
@@ -81,7 +85,7 @@ export class FolderPage implements OnInit {
         'Authorization': 'Basic ' + btoa(environment.clientId + ":" + environment.clientSecret),
       }),
     };
-      
+    //application level authorization grant type is "client_credentials"
     const grantType = "client_credentials";
     const postdata = `grant_type=${grantType}`;
     this.httpClient.post('https://www.reddit.com/api/v1/access_token', postdata, httpOptions
@@ -89,7 +93,7 @@ export class FolderPage implements OnInit {
       (response) => {
         console.log("Successful response to authorization grant ");
         console.log(response);
-        this.userAppAuth = response["access_token"];
+        this.appAuth = response["access_token"];
         console.log("Pulling out the access token: " + this.appAuth);
         this.getData();
       },
@@ -99,6 +103,7 @@ export class FolderPage implements OnInit {
 
   }
 
+  //function for user-level authorization
   authorizeAppUser(codeP){
     const httpOptions = {
       headers: new HttpHeaders({
@@ -106,7 +111,7 @@ export class FolderPage implements OnInit {
         'Authorization': 'Basic ' + btoa(environment.clientId + ":" + environment.clientSecret),
       }),
     };
-      
+    //user-level authorization grant type is "authorization_code"
     const grantType2 = "authorization_code";
     const redirect = "http://localhost:8100/";
     const postdata = `grant_type=${grantType2}&code=${codeP}&redirect_uri=${redirect}`;
@@ -115,8 +120,10 @@ export class FolderPage implements OnInit {
       (response) => {
         console.log("Successful response to user authorization grant ");
         console.log(response);
-        this.appAuth = response["access_token"];
-        console.log("Pulling out the access token: " + this.appAuth);
+        this.userAppAuth = response["access_token"];
+        console.log("Pulling out the access token: " );
+        console.log(this.userAppAuth);
+        this.redditService.pushUserAppAuth(this.userAppAuth);
         //this.getData();
       },
       (err) => console.log('HTTP Error', err)
@@ -130,14 +137,13 @@ export class FolderPage implements OnInit {
     const httpOptions = {
       headers: new HttpHeaders({
         'Content-Type': 'application/x-www-form-urlencoded',
-        'Authorization': 'Bearer '+this.appAuth,
+        'Authorization': 'Bearer '+ this.appAuth,
         }),
       };
       this.httpClient.get('https://oauth.reddit.com/r/popular', httpOptions)
       .subscribe(data => {
       console.log('my data: ', data);
       this.redditData = data;
-      //console.log("0 index:" + this.redditData['data']['children'][0])
       this.getPosts();
     });
 
@@ -181,9 +187,9 @@ export class FolderPage implements OnInit {
     if(codeParam != undefined){
       this.authorizeAppUser(codeParam);
     }
-    console.log("in check params");
-    console.log(codeParam);
-    console.log(stateParam);
+    // console.log("in check params");
+    // console.log(codeParam);
+    // console.log(stateParam);
   }
 
 
