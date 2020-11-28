@@ -18,6 +18,11 @@ export class AppComponent implements OnInit {
       icon: 'aperture'
     },
     {
+      title: 'Inbox',
+      url: '/inbox',
+      icon: 'mail'
+    },
+    {
       title: 'Outbox',
       url: '/folder/Outbox',
       icon: 'paper-plane'
@@ -41,6 +46,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log(window.location.pathname.split('folder/')[1]);
     const path = window.location.pathname.split('folder/')[1];
     if (path !== undefined) {
       this.selectedIndex = this.appPages.findIndex(page => page.title.toLowerCase() === path.toLowerCase());
