@@ -1,0 +1,16 @@
+{
+  "name": "streamfeeder-server",
+  "version": "1.0.0",
+  "description": "streamfeeder server",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "cat package.json"
+  },
+  "author": "Stephen Cahill (cahillsf9@gmail.com)",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "2.8.5",
+    "express": "4.17.1",
+    "mysql": "2.17.1"
+  }
+}
