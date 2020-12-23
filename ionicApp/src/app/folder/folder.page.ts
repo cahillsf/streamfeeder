@@ -3,8 +3,10 @@ import { ActivatedRoute, Router, NavigationStart } from '@angular/router';
 import {environment} from '../../environments/environment'
 import { Observable, Subscription } from 'rxjs'
 import {HttpClient, HttpClientModule, HttpHeaders} from '@angular/common/http'
-import { IonButton } from '@ionic/angular';
+import { IonButton, ModalController } from '@ionic/angular';
 import { RedditServiceService } from '../services/reddit-service.service';
+import { LoginModalPage } from '../modals/login-modal/login-modal.page';
+
 
 
 @Component({
@@ -31,7 +33,7 @@ export class FolderPage implements OnInit {
   
   @ViewChild('helloBut') helloButton: IonButton;
 
-  constructor(private router: Router, private activatedRoute: ActivatedRoute, private httpClient: HttpClient, public redditService: RedditServiceService) {
+  constructor(private router: Router, private activatedRoute: ActivatedRoute, private httpClient: HttpClient, public redditService: RedditServiceService, private modalCtrl: ModalController) {
     // this.channel = this.httpClient.get('http://localhost:3000/subreddits/popular')
     // this.channel.subscribe(data => {
     //   console.log('my data: ', data);
@@ -190,6 +192,12 @@ export class FolderPage implements OnInit {
     // console.log("in check params");
     // console.log(codeParam);
     // console.log(stateParam);
+  }
+
+  async loginDatabase(){
+    var myModal = await this.modalCtrl.create({component: LoginModalPage});
+    return await myModal.present();
+
   }
 
 

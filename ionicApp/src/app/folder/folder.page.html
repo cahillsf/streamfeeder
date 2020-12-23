@@ -8,6 +8,7 @@
     </ion-buttons>
     <ion-title id="topName">{{ folder2 }}</ion-title>
     <ion-buttons slot="end" color="secondary">
+      <ion-button color="primary" fill="outline" (click)="loginDatabase()">DB Check</ion-button>
       <ion-button color="primary" fill="outline" [routerLink]="['/login']">Login</ion-button>
       <ion-button color="primary" fill="outline" id="redditLogin">Reddit Login</ion-button>
     </ion-buttons>
