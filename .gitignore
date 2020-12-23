@@ -29,7 +29,8 @@ npm-debug.log*
 /platforms
 /plugins
 /www
-./backEnd/streamfeeder-server/node_modules
+backEnd/streamfeeder-server/node_modules
+ionicApp/node_modules
 ionicApp/node_modules/codelyzer/node_modules/@angular/compiler/bundles/.compiler.umd.min.js.map.icloud
 ionicApp/node_modules/codelyzer/node_modules/@angular/compiler/bundles/.compiler.umd.js.map.icloud
 ionicApp/node_modules/@angular/compiler/bundles/.compiler.umd.js.map.icloud
