@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <form [formGroup]="myForm">
+
+      <ion-item>
+      </ion-item>
+      <ion-item>
+        <ion-input type="email" placeholder="Email" class="input" formControlName="field1"></ion-input>
+      </ion-item>
+      <!--div *ngIf="(email.dirty || email.touched) && email.errors" class="errors">
+        <span *ngIf="email.errors?.required">Email is required</span>
+        <span *ngIf="email.errors?.email">Email is invalid</span>
+      </div-->
+      <ion-item>
+        <ion-input class="input" formControlName="field2" type="password" placeholder="Password" ></ion-input>
+      </ion-item>
+      <!--div *ngIf="(password.dirty || password.touched) && password.errors" class="errors">
+        <span *ngIf="password.errors?.required">Password is required</span>
+        <span *ngIf="password.errors?.minlength">Password needs to be 6 characters</span>
+      </div-->
+    </form>
+    
+      
+  <ion-button expand="full" (click)="saveForm()">Submit</ion-button>
+    
+  </ion-list>
+
+</ion-content>
