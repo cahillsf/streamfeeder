@@ -1,22 +1,32 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Login</ion-title>
+    <ion-title>Create An Account</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-list>
-    <form [formGroup]="myForm">
+    <form (ngSubmit)="saveForm()" [formGroup]="myForm">
 
       <ion-item>
+        <ion-grid #nameGrid>
+          <ion-row>
+            <ion-col>
+              <ion-input type="text" placeholder="First name" class="input" formControlName="firstName"></ion-input>
+            </ion-col>
+            <ion-col>
+              <ion-input type="text" placeholder="Last name" class="input" formControlName="lastName"></ion-input>
+            </ion-col>
+          </ion-row>
+          </ion-grid>
       </ion-item>
       <ion-item>
         <ion-input type="email" placeholder="Email" class="input" formControlName="field1"></ion-input>
       </ion-item>
-      <!--div *ngIf="(email.dirty || email.touched) && email.errors" class="errors">
-        <span *ngIf="email.errors?.required">Email is required</span>
-        <span *ngIf="email.errors?.email">Email is invalid</span>
-      </div-->
+      <div *ngIf="(field1.dirty || field1.touched) && field1.errors" class="errors">
+        <span *ngIf="field1.errors?.required">Email is required</span>
+        <span *ngIf="field1.errors?.email">Email is invalid</span>
+      </div>
       <ion-item>
         <ion-input class="input" formControlName="field2" type="password" placeholder="Password" ></ion-input>
       </ion-item>
@@ -26,7 +36,7 @@
       </div-->
     </form>
     
-      
+  <ion-button expand="full" (click)="confirmAccount()">Test Toast</ion-button> 
   <ion-button expand="full" (click)="saveForm()">Submit</ion-button>
     
   </ion-list>
