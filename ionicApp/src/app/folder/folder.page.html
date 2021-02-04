@@ -8,26 +8,14 @@
     </ion-buttons>
     <ion-title id="topName">{{ folder2 }}</ion-title>
     <ion-buttons slot="end" color="secondary">
-      <ion-button color="primary" fill="outline" (click)="loginDatabase()">DB Check</ion-button>
+      <ion-button color="primary" fill="outline" (click)="loginDatabase()">Create An Account</ion-button>
       <ion-button color="primary" fill="outline" [routerLink]="['/login']">Login</ion-button>
       <ion-button color="primary" fill="outline" id="redditLogin">Reddit Login</ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">{{ folder }}</ion-title>
-    </ion-toolbar>
-  </ion-header>
-    <ion-button id="helloButton" href="http://www.google.com" target="_self">Hello Team 5, sup?</ion-button>
-    <ion-button id="authButton" (click)="authorizeApp()">App auth</ion-button>
-    <ion-button (click)="testExpress()" >Testing</ion-button>
-
-    <ion-button (click)="testExpress2()">Testing2</ion-button>
-    <ion-button (click)="getData()" >Get Data</ion-button>
-    
+<ion-content [fullscreen]="false">
     <ion-grid>
       <ion-item-group *ngIf="bool2">
         <ion-item *ngFor="let p of posts">
