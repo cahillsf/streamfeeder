@@ -1,0 +1,11 @@
+IN YOUR LOCAL MYSQL ENVIRONMENT CREATE A DATABASE
+
+database: streamfeeder 
+
+CREATE THIS USER 
+user: 'streamfeeder_admin'@'localhost'
+password: tacosandburritos
+
+FROM TERMINAL, cd into streamfeeder-server directory
+to start server
+node src/index.js
