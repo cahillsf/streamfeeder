@@ -59,25 +59,10 @@ export class FolderPage implements OnInit {
 
     //link to my login button - passes the scope I'm requesting along with app client ID and a few other security related parameters
     let urlString: string = "https://www.reddit.com/api/v1/authorize.compact?client_id=" + environment.clientId + "&response_type=code&state=" + environment.apiState + "&redirect_uri=" + environment.redirect + "&duration=" + environment.duration + "&scope=" + environment.scope
-    var helloButton = (<HTMLAnchorElement>document.getElementById("helloButton"));
-    helloButton.href = urlString;
     let redditLogin = (<HTMLAnchorElement>document.getElementById("redditLogin"));
     redditLogin.href = urlString;
   }
 
-  testExpress(){
-    this.channel = this.httpClient.get('https://jsonplaceholder.typicode.com/posts/1')
-    //this.channel = this.httpClient.get('https://reddit.com/subreddits/popular')
-    this.channel.subscribe(data => {
-      console.log('my data: ', data);
-    })
-  }
-  testExpress2(){
-    this.channel2 = this.httpClient.get('http://localhost:3000/info')
-    this.channel2.subscribe(data => {
-      console.log('my data: ', data);
-    })
-  }
 
   //function for application-level authorization: in production would take place on a backend server to protect clientSecret
   authorizeApp(){
