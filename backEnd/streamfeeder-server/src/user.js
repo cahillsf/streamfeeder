@@ -14,7 +14,7 @@ function createRouter(db) {
     id+=1;
     db.query(
       'INSERT INTO user (UserID, password, Fname, Lname, Email) VALUES (?,?,?,?,?)',
-      [id, req.body.password, Fname, Lname, req.body.email],
+      [id, req.body.password, req.body.firstName, req.body.lastName, req.body.email],
       (error) => {
         if (error) {
             console.log(req.body.id);
