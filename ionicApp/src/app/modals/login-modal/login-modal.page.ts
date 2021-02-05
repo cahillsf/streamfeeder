@@ -24,7 +24,7 @@ export class LoginModalPage implements OnInit {
 
   ngOnInit() {
   }
-
+  //
   saveForm(){
     console.log(this.myForm.value);
     console.log(this.myForm.value.field1);
