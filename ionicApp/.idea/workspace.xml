@@ -21,16 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="72ae788c-0806-4694-9326-ca4ec0cbcf3c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/__ngcc_entry_points__.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/__ngcc_entry_points__.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/folder/folder.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/folder/folder.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/folder/folder.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/folder/folder.page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/folder/folder.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/folder/folder.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/variables.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +95,8 @@
       <updated>1604754389336</updated>
       <workItem from="1604754391347" duration="3908000" />
       <workItem from="1604781570948" duration="3934000" />
-      <workItem from="1604888847080" duration="1584000" />
+      <workItem from="1604888847080" duration="1788000" />
+      <workItem from="1604972080854" duration="1477000" />
     </task>
     <task id="LOCAL-00001" summary="Login page demo">
       <created>1604781812887</created>
