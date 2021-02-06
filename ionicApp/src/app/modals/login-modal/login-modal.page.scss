@@ -1,0 +1,14 @@
+ion-grid #nameGrid{
+    --ion-grid-padding: 0;
+}
+
+ion-item ion-input {
+    --padding-start: 10px;
+    --padding-end: 10px;
+}
+
+.input{
+    border: solid 1px black;
+    border-radius: 15px;
+
+}

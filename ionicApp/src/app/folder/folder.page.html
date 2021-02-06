@@ -7,6 +7,7 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title id="topName">{{ folder2 }}</ion-title>
+
   </ion-toolbar>
 </ion-header>
 
@@ -19,5 +20,36 @@
   <ion-button expand="full" (click)="logout()">Logout</ion-button>
     
 
+
+
+    <ion-buttons slot="end" color="secondary">
+      <ion-button color="primary" fill="outline" (click)="loginDatabase()">Create An Account</ion-button>
+      <ion-button color="primary" fill="outline" [routerLink]="['/login']">Login</ion-button>
+      <ion-button color="primary" fill="outline" id="redditLogin">Reddit Login</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="false">
+    <ion-grid>
+      <ion-item-group *ngIf="bool2">
+        <ion-item *ngFor="let p of posts">
+          <ion-card>  
+            <ion-card-header>
+              <ion-card-title>
+                {{ p['data']['title'] }}
+              </ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              {{ p['data']['shortText'] }}
+              <ng-container *ngIf="p['data']['hasPreview']">
+                <img src="{{p['data']['thumbnail']}}">
+              </ng-container> 
+              
+            </ion-card-content>
+          </ion-card>
+        </ion-item>
+      </ion-item-group>
+    </ion-grid>
 
 </ion-content>

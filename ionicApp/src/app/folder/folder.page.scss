@@ -2,6 +2,12 @@
   font-family: 'Quicksand';
 }
 
+
+ion-grid {
+  --ion-grid-padding: 0;
+}
+
+
 #topName{
   font-family: 'Permanent Marker', cursive;
   font-weight: bold;

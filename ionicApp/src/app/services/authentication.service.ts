@@ -46,4 +46,5 @@ export class AuthenticationService {
     this.isAuthenticated.next(false);
     return Storage.remove({key: TOKEN_KEY});
   }
+
 }
