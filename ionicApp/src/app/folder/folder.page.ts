@@ -1,20 +1,13 @@
-
-import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute, Router} from '@angular/router';
-import {environment} from '../../environments/environment';
-import { Observable } from 'rxjs';
-import {HttpClient, HttpClientModule} from '@angular/common/http';
-import {AuthenticationService} from '../services/authentication.service';
-import { IonButton } from '@ionic/angular';
-
+import { Observable, Subscription } from 'rxjs';
+import { AuthenticationService } from '../services/authentication.service';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router, NavigationStart } from '@angular/router';
-import {environment} from '../../environments/environment'
-import { Observable, Subscription } from 'rxjs'
-import {HttpClient, HttpClientModule, HttpHeaders} from '@angular/common/http'
+import { environment } from '../../environments/environment'
+import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http'
 import { IonButton, ModalController } from '@ionic/angular';
 import { RedditServiceService } from '../services/reddit-service.service';
 import { LoginModalPage } from '../modals/login-modal/login-modal.page';
+import { async } from 'rxjs/internal/scheduler/async';
 
 
 
@@ -24,10 +17,6 @@ import { LoginModalPage } from '../modals/login-modal/login-modal.page';
   templateUrl: './folder.page.html',
   styleUrls: ['./folder.page.scss'],
 })
-
-export class FolderPage {
-
-  constructor(private authService: AuthenticationService, private router: Router) {}
 
 export class FolderPage implements OnInit {
   public folder: string;
@@ -45,8 +34,9 @@ export class FolderPage implements OnInit {
   public burritos;
   public browserRefresh: Boolean;
   public refreshSubscription: Subscription;
-  
+
   @ViewChild('helloBut') helloButton: IonButton;
+  authService: any;
 
   constructor(private router: Router, private activatedRoute: ActivatedRoute, private httpClient: HttpClient, public redditService: RedditServiceService, private modalCtrl: ModalController) {
     // this.channel = this.httpClient.get('http://localhost:3000/subreddits/popular')
@@ -62,13 +52,13 @@ export class FolderPage implements OnInit {
         //console.log("Browser refresh = " + this.browserRefresh);
       }
     });
-    
-   }
+
+  }
 
   ngOnInit() {
     //this.folder = this.activatedRoute.snapshot.paramMap.get('id');
     this.checkParams();
-    this.burritos = [{name: 'Burrito1', url: '../../assets/burrito1.jpeg'}, {name: 'Burrito2', url: '../../assets/burrito2.jpeg'}];
+    this.burritos = [{ name: 'Burrito1', url: '../../assets/burrito1.jpeg' }, { name: 'Burrito2', url: '../../assets/burrito2.jpeg' }];
     this.folder = "Streamfeeder";
     this.folder2 = "STREAMFEEDER";
 
@@ -77,38 +67,39 @@ export class FolderPage implements OnInit {
     let redditLogin = (<HTMLAnchorElement>document.getElementById("redditLogin"));
     redditLogin.href = urlString;
   }
+  
 
 
   async logout() {
     await this.authService.logout();
     this.router.navigateByUrl('/', { replaceUrl: true });
   }
-}
 
-  //function for application-level authorization: in production would take place on a backend server to protect clientSecret
-  authorizeApp(){
-    const httpOptions = {
-      headers: new HttpHeaders({
-        'Content-Type': 'application/x-www-form-urlencoded',
-        'Authorization': 'Basic ' + btoa(environment.clientId + ":" + environment.clientSecret),
-      }),
-    };
-    //application level authorization grant type is "client_credentials"
-    const grantType = "client_credentials";
-    const postdata = `grant_type=${grantType}`;
-    this.httpClient.post('https://www.reddit.com/api/v1/access_token', postdata, httpOptions
-    ).subscribe(
-      (response) => {
-        console.log("Successful response to authorization grant ");
-        console.log(response);
-        this.appAuth = response["access_token"];
-        console.log("Pulling out the access token: " + this.appAuth);
-        this.getData();
-      },
-      (err) => console.log('HTTP Error', err)
 
-    );
+//function for application-level authorization: in production would take place on a backend server to protect clientSecret
+authorizeApp(){
+  const httpOptions = {
+    headers: new HttpHeaders({
+      'Content-Type': 'application/x-www-form-urlencoded',
+      'Authorization': 'Basic ' + btoa(environment.clientId + ":" + environment.clientSecret),
+    }),
+  };
+  //application level authorization grant type is "client_credentials"
+  const grantType = "client_credentials";
+  const postdata = `grant_type=${grantType}`;
+  this.httpClient.post('https://www.reddit.com/api/v1/access_token', postdata, httpOptions
+  ).subscribe(
+    (response) => {
+      console.log("Successful response to authorization grant ");
+      console.log(response);
+      this.appAuth = response["access_token"];
+      console.log("Pulling out the access token: " + this.appAuth);
+      this.getData();
+    },
+    (err) => console.log('HTTP Error', err)
 
+  );
+  }
 
 
   //function for user-level authorization
@@ -129,7 +120,7 @@ export class FolderPage implements OnInit {
         console.log("Successful response to user authorization grant ");
         console.log(response);
         this.userAppAuth = response["access_token"];
-        console.log("Pulling out the access token: " );
+        console.log("Pulling out the access token: ");
         console.log(this.userAppAuth);
         this.redditService.pushUserAppAuth(this.userAppAuth);
         //this.getData();
@@ -145,15 +136,15 @@ export class FolderPage implements OnInit {
     const httpOptions = {
       headers: new HttpHeaders({
         'Content-Type': 'application/x-www-form-urlencoded',
-        'Authorization': 'Bearer '+ this.appAuth,
-        }),
-      };
-      this.httpClient.get('https://oauth.reddit.com/r/popular', httpOptions)
+        'Authorization': 'Bearer ' + this.appAuth,
+      }),
+    };
+    this.httpClient.get('https://oauth.reddit.com/r/popular', httpOptions)
       .subscribe(data => {
-      console.log('my data: ', data);
-      this.redditData = data;
-      this.getPosts();
-    });
+        console.log('my data: ', data);
+        this.redditData = data;
+        this.getPosts();
+      });
 
   }
 
@@ -163,10 +154,10 @@ export class FolderPage implements OnInit {
     this.posts.forEach(element => {
       // console.log(element['data']);
       //console.log(element['data']['thumbnail']);
-      if(element['data']['thumbnail'] == "self" || element['data']['thumbnail'] == "default"){
+      if (element['data']['thumbnail'] == "self" || element['data']['thumbnail'] == "default") {
         element['data']['hasPreview'] = false;
       }
-      else{
+      else {
         element['data']['hasPreview'] = true;
       }
       element['data'] = this.addShortText(element['data']);
@@ -180,10 +171,10 @@ export class FolderPage implements OnInit {
 
   //adds a property 'shortText' to each post object with a shortened version of the text to display on home screen of application
   addShortText(posting){
-    if (posting['selftext'].length > 280){
+    if (posting['selftext'].length > 280) {
       posting['shortText'] = posting['selftext'].substring(0, 280).concat("...");
     }
-    else{
+    else {
       posting['shortText'] = posting['selftext'];
     }
     return posting;
@@ -192,7 +183,7 @@ export class FolderPage implements OnInit {
   checkParams(){
     let codeParam = this.activatedRoute.snapshot.queryParams["code"];
     let stateParam = this.activatedRoute.snapshot.queryParams["state"];
-    if(codeParam != undefined){
+    if (codeParam != undefined) {
       this.authorizeAppUser(codeParam);
     }
     // console.log("in check params");
@@ -201,7 +192,7 @@ export class FolderPage implements OnInit {
   }
 
   async loginDatabase(){
-    var myModal = await this.modalCtrl.create({component: LoginModalPage});
+    var myModal = await this.modalCtrl.create({ component: LoginModalPage });
     return await myModal.present();
 
   }
