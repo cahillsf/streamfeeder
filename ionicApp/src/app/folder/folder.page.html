@@ -11,6 +11,7 @@
       <ion-button color="primary" fill="outline" (click)="loginDatabase()">Create An Account</ion-button>
       <ion-button color="primary" fill="outline" [routerLink]="['/login']">Login</ion-button>
       <ion-button color="primary" fill="outline" id="redditLogin">Reddit Login</ion-button>
+      <ion-button color="primary" fill="outline" [routerLink]="['./saved']">Saved Posts</ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -29,8 +30,22 @@
               {{ p['data']['shortText'] }}
               <ng-container *ngIf="p['data']['hasPreview']">
                 <img src="{{p['data']['thumbnail']}}">
-              </ng-container> 
-              
+              </ng-container>
+                <ion-row>
+                          <ion-button type="submit"
+                                      (click)="shareviaWhatsapp()">
+                            Share via WhatsApp
+                          </ion-button>
+                          <ion-button type="submit"
+                                      (click)="shareviaFacebook()">
+                            Share via Facebook
+                          </ion-button>
+                          <ion-button type="submit"
+                                      (click)="shareViaEmail()">
+                            Share via Email
+                          </ion-button>
+                          <ion-button (click)="sendData()">Save this post</ion-button>
+                </ion-row>
             </ion-card-content>
           </ion-card>
         </ion-item>
