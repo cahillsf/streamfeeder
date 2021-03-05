@@ -29,8 +29,9 @@
               {{ p['data']['shortText'] }}
               <ng-container *ngIf="p['data']['hasPreview']">
                 <img src="{{p['data']['thumbnail']}}">
-              </ng-container> 
-              
+              </ng-container>
+              <p>{{ p['data']['permalink'] }}</p>
+              <img id="whatsapp" src='assets/whatsapp--v1.png'>
             </ion-card-content>
           </ion-card>
         </ion-item>
