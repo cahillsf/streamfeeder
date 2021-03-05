@@ -6,6 +6,7 @@ import {HttpClient, HttpClientModule, HttpHeaders} from '@angular/common/http'
 import { IonButton, ModalController } from '@ionic/angular';
 import { RedditServiceService } from '../services/reddit-service.service';
 import { LoginModalPage } from '../modals/login-modal/login-modal.page';
+import { appInitialize } from '@ionic/angular/app-initialize';
 
 
 
@@ -20,6 +21,7 @@ export class FolderPage implements OnInit {
   public channel: Observable<any>;
   public channel2: Observable<any>;
   public appAuth: string;
+  public twitterAppAuth: string;
   public userAppAuth: string;
   public redditData;
   public child;
@@ -41,6 +43,9 @@ export class FolderPage implements OnInit {
 
     this.bool = false;
     this.authorizeApp();
+    this.authorizeAppTwitter();
+    this.getTrendingPosts();
+    this.getTrendingPosts2();
     this.refreshSubscription = router.events.subscribe((event) => {
       if (event instanceof NavigationStart) {
         this.browserRefresh = !router.navigated;
@@ -83,6 +88,32 @@ export class FolderPage implements OnInit {
         this.appAuth = response["access_token"];
         console.log("Pulling out the access token: " + this.appAuth);
         this.getData();
+      },
+      (err) => console.log('HTTP Error', err)
+
+    );
+
+  }
+  authorizeAppTwitter(){
+    console.log("in authorize app twitter");
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Access-Control-Allow-Headers':'Content-Type, Authorization',
+        'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+        'Authorization': 'Basic ' + btoa(environment.twitterKey + ":" + environment.twitterSecretKey)
+      }),
+    };
+    //application level authorization grant type is "client_credentials"
+    const grantType = "client_credentials";
+    const postdata = `grant_type=${grantType}`;
+    this.httpClient.post('https://api.twitter.com/oauth2/token', postdata, httpOptions
+    ).subscribe(
+      (response) => {
+        console.log("Successful response to twitter authorization grant ");
+        console.log(response);
+        this.twitterAppAuth = response["access_token"];
+        console.log("Pulling out the access token: " + this.twitterAppAuth);
+        //this.getData();
       },
       (err) => console.log('HTTP Error', err)
 
@@ -137,6 +168,7 @@ export class FolderPage implements OnInit {
   }
 
   getPosts(){
+    
     this.posts = this.redditData['data']['children'];
     this.child = this.posts[0]['data'];
     this.posts.forEach(element => {
@@ -156,6 +188,8 @@ export class FolderPage implements OnInit {
     this.bool2 = true;
 
   }
+
+
 
   //adds a property 'shortText' to each post object with a shortened version of the text to display on home screen of application
   addShortText(posting){
@@ -185,6 +219,54 @@ export class FolderPage implements OnInit {
 
   }
 
+  getTrendingPosts(){
+    // this.bool = true;
+    // const httpOptions = {
+    //   headers: new HttpHeaders({
+    //     'Content-Type': 'application/x-www-form-urlencoded',
+    //     'Authorization': 'Bearer '+ environment.twitterAppBearer,
+    //     }),
+    //   };
+    //   this.httpClient.get('https://api.twitter.com/1.1/trends/place.json?id=2459115', httpOptions)
+    //   .subscribe(data => {
+    //   console.log('my data: ', data);
+    //   // this.redditData = data;
+    //   // this.getPosts();
+    console.log("down here trending");
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+        // 'Authorization': 'Bearer '+ this.userAppAuth,
+        }),
+      };
+      this.httpClient.get('http://localhost:8080/hello', httpOptions)
+      .subscribe((response) => {
+        console.log('my response: ', JSON.stringify(response));
+        //this.modalCtrl.dismiss();
+      },
+      (err) => console.log('HTTP Error', err)
+      );
+    }
 
-}
+    getTrendingPosts2(){
+     
+      const httpOptions = {
+        headers: new HttpHeaders({
+          'Content-Type': 'application/json',
+          // 'Authorization': 'Bearer '+ this.userAppAuth,
+          }),
+        };
+        this.httpClient.get('http://localhost:8080/hello2', httpOptions)
+        .subscribe((response) => {
+          console.log('my response: ', JSON.stringify(response));
+          //this.modalCtrl.dismiss();
+        },
+        (err) => console.log('HTTP Error', err)
+        );
+      }
+  
+  
+  
+  
+  }
 
