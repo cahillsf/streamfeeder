@@ -1,5 +1,8 @@
+//import { Observable } from 'rxjs';
+
 const express = require('express');
 const bodyParser = require('body-parser');
+const Rx = require('rxjs');
 
 function createRouter(db) {
   const router = express.Router();
@@ -30,8 +33,76 @@ function createRouter(db) {
     );
   });
 
-  // the routes are defined here
+  router.get('/hello', (req, res, next) =>{
+      console.log("OK");
+      const https = require('https')
+      var response = "hello";
+      const options = {
+        hostname: 'api.twitter.com',
+        port: 443,
+        path: '/1.1/trends/place.json?id=1',
+        method: 'GET',
+        headers: {'Authorization':'Bearer AAAAAAAAAAAAAAAAAAAAAP1AJgEAAAAAAnpPXM9AUujBZSQUN40nHGVnaMQ%3DkR1GHff9KRFOUHjxpjpzHH3IiBxwER7T80I5MgpOYnMpDQtzwr'}
+      }
 
+      const req2 = https.request(options, res => {
+        console.log(`statusCode: ${res.statusCode}`)
+
+        res.on('data', d => {
+          //process.stdout.write(d)
+          response = JSON.stringify(d);
+          console.log(d.toString())
+        })
+  
+      })
+    
+      req2.on('error', error => {
+        console.error(error)
+      })
+      req2.end();
+      //res.send(response);
+      res.send(JSON.stringify(response));
+      
+
+  });
+
+  router.get('/hello2', (req, res, next) =>{
+    console.log("called 2");
+    var response = getTrending();
+    res.send(JSON.stringify(response));
+  });
+
+  function getTrending(){
+    const https = require('https')
+    const options = {
+      hostname: 'api.twitter.com',
+      port: 443,
+      path: '/1.1/trends/place.json?id=1',
+      method: 'GET',
+      headers: {'Authorization':'Bearer AAAAAAAAAAAAAAAAAAAAAP1AJgEAAAAAAnpPXM9AUujBZSQUN40nHGVnaMQ%3DkR1GHff9KRFOUHjxpjpzHH3IiBxwER7T80I5MgpOYnMpDQtzwr'}
+    }
+
+    const req2 = https.request(options, res => {
+      console.log(`statusCode: ${res.statusCode}`)
+
+      res.on('data', d => {
+        //process.stdout.write(d)
+        response = JSON.stringify(d);
+        console.log(d.toString())
+        return d;
+      })
+
+    })
+  
+    req2.on('error', error => {
+      console.error(error)
+    })
+    req2.end();
+  
+
+  }
+
+  // the routes are defined here
   return router;
 }
 
