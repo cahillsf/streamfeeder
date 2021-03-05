@@ -9,7 +9,10 @@ export const environment = {
   redirect: "http://localhost:8100/",
   duration: "temporary",
   scope: "identity,edit,flair,history,mysubreddits,privatemessages",
-  clientSecret: "qWWPwMivu9fDtKEpjmb1H1Y7HXU"
+  clientSecret: "qWWPwMivu9fDtKEpjmb1H1Y7HXU",
+  twitterKey: "s0uOcgwPYtevYl2jgwLMuvjYH",
+  twitterSecretKey: "S1ZPS3SRouMK5VFPOStUAlRig2009kRv5RH0b3PkZXnVyM9e01",
+  twitterAppBearer: "AAAAAAAAAAAAAAAAAAAAAP1AJgEAAAAAAnpPXM9AUujBZSQUN40nHGVnaMQ%3DkR1GHff9KRFOUHjxpjpzHH3IiBxwER7T80I5MgpOYnMpDQtzwr"
 };
 
 

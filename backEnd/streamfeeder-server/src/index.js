@@ -4,6 +4,8 @@ const bodyParser = require('body-parser');
 const mysql = require('mysql');
 const events = require('./user');
 
+//import {Observable} from rxjs;
+
 const connection = mysql.createConnection({
   host     : 'localhost',
   user     : 'streamfeeder_admin',
