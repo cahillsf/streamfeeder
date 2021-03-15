@@ -11,6 +11,7 @@
       <ion-button color="primary" fill="outline" (click)="loginDatabase()">Create An Account</ion-button>
       <ion-button color="primary" fill="outline" [routerLink]="['/login']">Login</ion-button>
       <ion-button color="primary" fill="outline" id="redditLogin">Reddit Login</ion-button>
+      <ion-button color="primary" fill="outline" id="twitterLogin">Twitter Login</ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -30,8 +31,10 @@
               <ng-container *ngIf="p['data']['hasPreview']">
                 <img src="{{p['data']['thumbnail']}}">
               </ng-container>
-              <p>{{ p['data']['permalink'] }}</p>
-              <img id="whatsapp" src='assets/whatsapp--v1.png'>
+              <!--p>{{ p['data']['permalink'] }}</p-->
+              <div>
+                <ion-button (click)="copyToClipboard(p['data']['permalink'])"><img id="whatsapp" src="assets/whatsapp--v1.png"></ion-button>
+              </div>
             </ion-card-content>
           </ion-card>
         </ion-item>
