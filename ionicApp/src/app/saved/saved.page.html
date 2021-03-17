@@ -15,20 +15,23 @@
 </ion-header>
 <ion-content>
   <ion-grid>
-    <ion-item-group *ngIf="gotMessages">
-      <ion-item *ngFor="let m of messages">
-        <ion-card>  
+    <ion-item-group *ngIf="gotPosts">
+      <ion-item *ngFor="let s of savedPosts">
+        <ion-card> 
           <ion-card-header>
             <ion-card-title>
-              {{ m['data']['subject'] }}
+              {{ s['data']['title'] }}
             </ion-card-title>
-          </ion-card-header>
+          </ion-card-header> 
           <ion-card-content>
-              {{ m['data']['body']}}
-            <ng-container *ngIf="">
-              
-            </ng-container> 
-            
+            {{ s['data']['shortText'] }}
+            <ng-container *ngIf="s['data']['hasPreview']">
+              <img src="{{s['data']['thumbnail']}}">
+            </ng-container>
+            <!--p>{{ p['data']['permalink'] }}</p-->
+            <div>
+              <ion-button (click)="copyToClipboard(s['data']['permalink'])"><img id="whatsapp" src="assets/copy.png"></ion-button>
+            </div>
           </ion-card-content>
         </ion-card>
       </ion-item>
