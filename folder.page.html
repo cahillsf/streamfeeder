@@ -11,6 +11,7 @@
       <ion-button color="primary" fill="outline" (click)="loginDatabase()">Create An Account</ion-button>
       <ion-button color="primary" fill="outline" [routerLink]="['/login']">Login</ion-button>
       <ion-button color="primary" fill="outline" id="redditLogin">Reddit Login</ion-button>
+      <ion-button color="primary" fill="outline" id="twitterLogin">Twitter Login</ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -19,7 +20,7 @@
     <ion-grid>
       <ion-item-group *ngIf="bool2">
         <ion-item *ngFor="let p of posts">
-          <ion-card>
+          <ion-card>  
             <ion-card-header>
               <ion-card-title>
                 {{ p['data']['title'] }}
@@ -30,9 +31,21 @@
               <ng-container *ngIf="p['data']['hasPreview']">
                 <img src="{{p['data']['thumbnail']}}">
               </ng-container>
-              <p>{{ p['data']['permalink'] }}</p>
-              <ion-button (click)="copyToClipboard(p['data']['permalink'])"><img id="whatsapp" src="assets/whatsapp--v1.png"></ion-button>
-              <img id="whatsapp" src='assets/whatsapp--v1.png'>
+              <!--p>{{ p['data']['permalink'] }}</p-->
+              <div class="test">
+                <div class="voting">
+                  <ion-button color="white" (click)="upvotePost(p['data']['id'])"><img id="arrowupgreen" src="assets/arrowupgreen.png"></ion-button>
+                </div>
+                <div class="score">
+                  {{ p['data']['score'] }}
+                </div>
+                <div class="voting">
+                  <ion-button color="white" (click)="downvotePost(p['data']['id'])"><img id="arrowdownred" src="assets/arrowdownred.png"></ion-button>
+                </div>
+              </div>
+              <div>
+                  <ion-button (click)="copyToClipboard(p['data']['permalink'])"><img id="whatsapp" src="assets/copy.png"></ion-button>
+              </div>
             </ion-card-content>
           </ion-card>
         </ion-item>

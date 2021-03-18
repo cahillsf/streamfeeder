@@ -1,12 +1,12 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router, NavigationStart } from '@angular/router';
 import {environment} from '../../environments/environment'
-import { Observable, Subscription } from 'rxjs'
+import { Observable, Subscription, VirtualTimeScheduler } from 'rxjs'
 import {HttpClient, HttpClientModule, HttpHeaders} from '@angular/common/http'
 import { IonButton, ModalController } from '@ionic/angular';
 import { RedditServiceService } from '../services/reddit-service.service';
 import { LoginModalPage } from '../modals/login-modal/login-modal.page';
-import { appInitialize } from '@ionic/angular/app-initialize';
+
 
 
 
@@ -32,7 +32,8 @@ export class FolderPage implements OnInit {
   public burritos;
   public browserRefresh: Boolean;
   public refreshSubscription: Subscription;
-
+  public accessToken;
+  
   @ViewChild('helloBut') helloButton: IonButton;
 
   constructor(private router: Router, private activatedRoute: ActivatedRoute, private httpClient: HttpClient, public redditService: RedditServiceService, private modalCtrl: ModalController) {
@@ -43,16 +44,17 @@ export class FolderPage implements OnInit {
 
     this.bool = false;
     this.authorizeApp();
-    this.authorizeAppTwitter();
-    this.getTrendingPosts();
-    this.getTrendingPosts2();
+    // this.authorizeAppTwitter();
+    // this.getTrendingPosts();
+    // this.getTrendingPosts2();
+    //this.testAuth();
     this.refreshSubscription = router.events.subscribe((event) => {
       if (event instanceof NavigationStart) {
         this.browserRefresh = !router.navigated;
         //console.log("Browser refresh = " + this.browserRefresh);
       }
     });
-
+    
    }
 
   ngOnInit() {
@@ -168,7 +170,7 @@ export class FolderPage implements OnInit {
   }
 
   getPosts(){
-
+    
     this.posts = this.redditData['data']['children'];
     this.child = this.posts[0]['data'];
     this.posts.forEach(element => {
@@ -205,8 +207,15 @@ export class FolderPage implements OnInit {
   checkParams(){
     let codeParam = this.activatedRoute.snapshot.queryParams["code"];
     let stateParam = this.activatedRoute.snapshot.queryParams["state"];
+    let oauthVerifier = this.activatedRoute.snapshot.queryParams["oauth_verifier"];
     if(codeParam != undefined){
       this.authorizeAppUser(codeParam);
+    }
+    if(oauthVerifier != undefined){
+      this.postOauthVerifier(oauthVerifier);
+    }
+    else{
+      this.testAuth();
     }
     // console.log("in check params");
     // console.log(codeParam);
@@ -249,7 +258,7 @@ export class FolderPage implements OnInit {
     }
 
     getTrendingPosts2(){
-
+     
       const httpOptions = {
         headers: new HttpHeaders({
           'Content-Type': 'application/json',
@@ -265,17 +274,91 @@ export class FolderPage implements OnInit {
         );
       }
 
+      testAuth(){
+     
+        const httpOptions = {
+          headers: new HttpHeaders({
+            'Content-Type': 'text',
+            // 'Authorization': 'Bearer '+ this.userAppAuth,
+            }),
+          };
+          this.httpClient.get('http://localhost:8080/authorizeThis', httpOptions)
+          .subscribe((response) => {
+            console.log('my response: ', response);
+            console.log("response['data'} is " + response['data']);
+            let urlString = response['data'];
+            let twitterLogin = (<HTMLAnchorElement>document.getElementById("twitterLogin"));
+            twitterLogin.href = urlString;
+            //this.modalCtrl.dismiss();
+          },
+          (err) => console.log('HTTP Error', err)
+          );
+        }
 
-    copyToClipboard(redditURL) {
-      const URLpreface = 'https://www.reddit.com';
-      document.addEventListener('copy', (e: ClipboardEvent) => {
-        //'text/plain' is default value for textual files
-        e.clipboardData.setData('text/plain', (URLpreface + redditURL));
-        //If event isn't explicitly handled, its default action shouldn't be taken as it normally would be
-        e.preventDefault();
-        document.removeEventListener('copy', null);
-      });
-      document.execCommand('copy');
-    }
+        postOauthVerifier(verifier: string){
+          console.log("in post verifier");
+          const postdata = `{"verifier":"${verifier}"}`;
+          const httpOptions = {
+            headers: new HttpHeaders({
+              'Content-Type': 'application/json',
+              // 'Authorization': 'Bearer '+ this.userAppAuth,
+              }),
+            };
+            this.httpClient.post('http://localhost:8080/postVerifier', postdata ,httpOptions)
+            .subscribe((response) => {
+              console.log('my response: ', response);
+              //this.confirmAccount();
+              //this.modalCtrl.dismiss();
+              this.getAccessToken();
+            },
+            (err) => console.log('HTTP Error', err)
+          );
+        }
 
+        getAccessToken(){
+          const httpOptions = {
+            headers: new HttpHeaders({
+              'Content-Type': 'text',
+              // 'Authorization': 'Bearer '+ this.userAppAuth,
+              }),
+            };
+            this.httpClient.get('http://localhost:8080/accessToken', httpOptions)
+            .subscribe((response) => {
+              console.log('my response: ', response);
+              console.log("response['accessToken'] is " + response['accessToken']);
+              let urlString = response['accessToken'];
+              this.accessToken = urlString;
+              console.log("access token stored: " + this.accessToken);
+            },
+            (err) => console.log('HTTP Error', err)
+            );
+
+        }
+
+        copyToClipboard(redditURL) {
+          const URLpreface = 'https://www.reddit.com';
+          document.addEventListener('copy', (e: ClipboardEvent) => {
+            //'text/plain' is default value for textual files
+            e.clipboardData.setData('text/plain', (URLpreface + redditURL));
+            //If event isn't explicitly handled, its default action shouldn't be taken as it normally would be
+            e.preventDefault();
+            document.removeEventListener('copy', null);
+          });
+          document.execCommand('copy');
+        }
+
+        upvotePost(postID) {
+          console.log('Upvoting post ' + postID);
+        }
+
+        downvotePost(postID) {
+          console.log('Post downvoted ' + postID);
+        }
+
+      
+  
+  
+  
+  
   }
+
