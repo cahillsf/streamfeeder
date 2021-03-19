@@ -5,5 +5,3 @@ Contains:
 1. ionicApp directory which contains the source code for the UI of our application
 2. backEnd directory which contains the source code for the back end of our application
 3. projectOne directory which contains final deliverables for Project 1 CS 691
-
-Commit/pull test before modifiying node_modules
