@@ -152,7 +152,7 @@ export class FolderPage implements OnInit {
 
   }
 
-  getData(){
+  getData(event?){
     this.bool = true;
     const httpOptions = {
       headers: new HttpHeaders({
@@ -167,6 +167,11 @@ export class FolderPage implements OnInit {
       this.getPosts();
     });
 
+  }
+
+  loadMore(event){
+    console.log(event);
+    this.getData(event);
   }
 
   getPosts(){
