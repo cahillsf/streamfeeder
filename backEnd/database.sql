@@ -1,4 +1,6 @@
-CREATE DATABASE streamfeeder
+CREATE DATABASE streamfeeder;
+
+USE streamfeeder;
 
 CREATE TABLE user(
     UserID INT NOT NULL,
