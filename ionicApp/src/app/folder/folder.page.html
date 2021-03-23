@@ -32,6 +32,17 @@
                 <img src="{{p['data']['thumbnail']}}">
               </ng-container>
               <!--p>{{ p['data']['permalink'] }}</p-->
+               <div class="test">
+                <div class="voting">
+                  <ion-button color="white" (click)="upvotePost(p['data']['id'])"><img id="arrowupgreen" src="assets/arrowupgreen.png"></ion-button>
+                </div>
+                <div class="score">
+                  {{ p['data']['score'] }}
+                </div>
+                <div class="voting">
+                  <ion-button color="white" (click)="downvotePost(p['data']['id'])"><img id="arrowdownred" src="assets/arrowdownred.png"></ion-button>
+                </div>
+              </div>
               <div>
                 <ion-button (click)="copyToClipboard(p['data']['permalink'])"><img id="whatsapp" src="assets/copy.png"></ion-button>
               </div>
