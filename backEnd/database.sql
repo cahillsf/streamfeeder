@@ -1,4 +1,6 @@
-CREATE DATABASE streamfeeder
+CREATE DATABASE streamfeeder;
+
+USE streamfeeder;
 
 CREATE TABLE user(
     UserID INT NOT NULL,
@@ -6,7 +8,9 @@ CREATE TABLE user(
     Fname VARCHAR(25) NOT NULL,
     Lname VARCHAR(25) NOT NULL,
     Email VARCHAR(100) NOT NULL,
-    PRIMARY KEY(UserID)
+    PRIMARY KEY(UserID),
+    FOREIGN KEY(PlatformID),
+        REFERENCES socialmediaplatforms(PlatformID)
 );
 
 CREATE TABLE socialmediaplatforms(
