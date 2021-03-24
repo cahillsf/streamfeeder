@@ -19,7 +19,7 @@ CREATE TABLE socialmediaplatforms(
     Name VARCHAR(25),
     Scope VARCHAR(200),
     PRIMARY KEY(PlatformID),
-    FOREIGN KEY (UserID)
+    FOREIGN KEY(UserID)
         REFERENCES user(UserID)
 );
 
@@ -30,7 +30,7 @@ CREATE TABLE settings(
     Permissions BIT,
     Notifications BIT,
     PRIMARY KEY(SettingsID),
-    FOREIGN KEY (UserID)
+    FOREIGN KEY(UserID)
         REFERENCES user(UserID)
 );
 
@@ -42,6 +42,14 @@ CREATE TABLE paymentinfo(
     CardNumber INT,
     Address VARCHAR(100),
     PRIMARY KEY(CardID),
-    FOREIGN KEY (UserID)
+    FOREIGN KEY(UserID)
         REFERENCES user(UserID)
+);
+
+CREATE TABLE userplatform(
+    PRIMARY KEY(UserPlatformID),
+    FOREIGN KEY(UserID)
+        REFERENCES user(UserID),
+    FOREIGN KEY(PlatformID)
+        REFERENCES socialmediaplatforms(PlatformID)
 );
