@@ -23,6 +23,14 @@ const routes: Routes = [
     path: 'login-modal',
     loadChildren: () => import('./modals/login-modal/login-modal.module').then( m => m.LoginModalPageModule)
   },
+  {
+    path: 'saved',
+    loadChildren: () => import('./saved/saved.module').then( m => m.SavedPageModule)
+  },
+  {
+    path: 'comments',
+    loadChildren: () => import('./modals/comments/comments.module').then( m => m.CommentsPageModule)
+  },
 ];
 
 @NgModule({

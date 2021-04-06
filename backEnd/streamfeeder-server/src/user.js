@@ -4,6 +4,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const Rx = require('rxjs');
 const session = require('express-session')
+const snoowrap = require('snoowrap');
 
 const {
   getOAuthRequestToken,
@@ -11,6 +12,14 @@ const {
   oauthGetUserById
 } = require('./oauth-utilities');
 //const { SSL_OP_EPHEMERAL_RSA } = require('constants');
+
+var r = new snoowrap({
+  userAgent: 'Streamfeeder by cahillsf9',
+  clientId: process.env.clientId,
+  clientSecret: process.env.clientSecret,
+  refreshToken: '257541280611-jb2S8wHiJColc8Pg_qJxUYgZ0-0fSg'
+});
+
 
 
 function createRouter(db) {
@@ -26,6 +35,7 @@ function createRouter(db) {
   var oauthCheckReqToken;
   let oauthVerifier;
   var oauthAccessToken;
+  var redditUserAccessToken;
 
   router.post('/user', (req, res, next) => {
     id+=1;
@@ -195,9 +205,7 @@ function createRouter(db) {
     console.log(process.env.TWITTER_CONSUMER_API_KEY);
     console.log(process.env.TWITTER_CONSUMER_API_SECRET_KEY);
     console.log("called authorizeThis");
-    //res.send(JSON.stringify({data: 'called authorizeThishahaha'}));
     twitter('authorize')(req, res);
-    //res.send(result);
     
   });
 
@@ -229,8 +237,102 @@ function createRouter(db) {
     }
   }
 
+ 
+  router.get('/moreData', (req, res, next)=>{
+    this.redditUserAccessToken = req.query.accessToken;
+    getMorePlease()(req, res);
+  })
 
+  function getMorePlease(){
+    return async(req, res) =>{
+      console.log("mmmoooorrreee 287");
+      const data = await getMoreCall();
+      //res.send(JSON.stringify({hello: "ARE YOU ENTERTAINED"}));
+      res.send({data: data});
+    }
 
+  }
+
+  async function getMoreCall(){
+    var redditAccess = this.redditUserAccessToken;
+    return new Promise(function (resolve, reject) {
+      const https = require('https')
+      let resString;
+      const options = {
+        hostname: 'oauth.reddit.com',
+        path: '/new',
+        method: 'GET',
+        headers: {'Authorization':'Bearer ' + redditAccess, 'User-Agent':'Streamfeeder by cahillsf9'}
+      }
+      var req = https.request(options, function(res) {
+        if (res.statusCode < 200 || res.statusCode >= 300) {
+          return reject(new Error('statusCode=' + res.statusCode));
+        }
+        var body = [];
+            res.on('data', function(chunk) {
+                body.push(chunk);
+        });
+        res.on('end', function() {
+          try {
+              body = JSON.parse(Buffer.concat(body).toString());
+          } catch(e) {
+              reject(e);
+          }
+          resolve(body);
+      });
+    });
+    req.on('error', function(err) {
+        // This is not a "Second reject", just a different sort of failure
+        reject(err);
+    });
+    // if (postData) {
+    //     req.write(postData);
+    // }
+    req.end();
+    }
+    )
+  }
+
+  router.post('/postNewComment', (req, res, next) =>{
+    console.log(req.body.postName);
+    console.log(req.body.message);
+    let postName = req.body.postName;
+    let message = req.body.message;
+    this.r.getSubmission(postName).reply(message);
+
+  });
+
+  router.post('/userAuth', (req, res, next) => {
+    console.log("LINE 324 HERE");
+    console.log("line 320 " + req.body.auth);
+    this.r = new snoowrap({
+          userAgent: 'Streamfeeder by cahillsf9',
+          clientId: process.env.clientId,
+          clientSecret: process.env.clientSecret,
+          refreshToken: req.body.auth
+    });
+    res.status(200).json({status: 'ok'}); 
+  });
+
+  router.get('/getComments', (req, res, next) =>{
+
+    //WORKING GET COMMENTS FUNCTION
+    //takes the ['id'] of the post (not the name --- without (t3_))
+    options={
+      limit: 25,
+      depth: 1
+    };
+   
+
+    var myComments = r.getSubmission('mivbou').expandReplies({limit: Infinity, depth: Infinity}).then(result => {
+      var myData = result;
+      console.log(myData);
+    }
+    )
+    
+  });
+
+  
   // the routes are defined here
   return router;
 }

@@ -58,7 +58,7 @@ export class LoginModalPage implements OnInit {
   async confirmAccount() {
     const toast = await this.toastCtrl.create({
       message: 'Account Successfully Created',
-      duration: 2000,
+      duration: 3000,
       position: 'top',
       color: 'secondary'
     });
