@@ -33,6 +33,9 @@ export class FolderPage implements OnInit {
   public browserRefresh: Boolean;
   public refreshSubscription: Subscription;
   public accessToken;
+  public postsnew = [];
+  page = 0;
+  maximumPages=3;
   
   @ViewChild('helloBut') helloButton: IonButton;
 
@@ -68,6 +71,7 @@ export class FolderPage implements OnInit {
     let urlString: string = "https://www.reddit.com/api/v1/authorize.compact?client_id=" + environment.clientId + "&response_type=code&state=" + environment.apiState + "&redirect_uri=" + environment.redirect + "&duration=" + environment.duration + "&scope=" + environment.scope
     let redditLogin = (<HTMLAnchorElement>document.getElementById("redditLogin"));
     redditLogin.href = urlString;
+    this.getData2();    
   }
 
 
@@ -152,7 +156,7 @@ export class FolderPage implements OnInit {
 
   }
 
-  getData(){
+  getData(event?){
     this.bool = true;
     const httpOptions = {
       headers: new HttpHeaders({
@@ -165,7 +169,27 @@ export class FolderPage implements OnInit {
       console.log('my data: ', data);
       this.redditData = data;
       this.getPosts();
+      
     });
+
+  }
+
+  getData2(event?){
+    this.httpClient.get('https://www.reddit.com/r/aww.json?raw_json=${this.page}')
+      .subscribe((response: any)=>{
+        console.log(response.data.children)
+        this.postsnew = response.data.children;
+        if(event){
+      event.target.complete(); 
+      }
+    });
+  }
+
+  loadMore(event){
+    console.log(event);
+    this.page++;
+    this.getData2(event);
+    
 
   }
 
@@ -190,6 +214,8 @@ export class FolderPage implements OnInit {
     this.bool2 = true;
 
   }
+
+  
 
 
 
@@ -346,6 +372,7 @@ export class FolderPage implements OnInit {
           });
           document.execCommand('copy');
         }
+        
 
       
   

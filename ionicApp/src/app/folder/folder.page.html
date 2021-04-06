@@ -17,27 +17,33 @@
 </ion-header>
 
 <ion-content [fullscreen]="false">
-    <ion-grid>
-      <ion-item-group *ngIf="bool2">
-        <ion-item *ngFor="let p of posts">
-          <ion-card>  
-            <ion-card-header>
-              <ion-card-title>
-                {{ p['data']['title'] }}
-              </ion-card-title>
-            </ion-card-header>
-            <ion-card-content>
-              {{ p['data']['shortText'] }}
-              <ng-container *ngIf="p['data']['hasPreview']">
-                <img src="{{p['data']['thumbnail']}}">
-              </ng-container>
-              <!--p>{{ p['data']['permalink'] }}</p-->
-              <div>
-                <ion-button (click)="copyToClipboard(p['data']['permalink'])"><img id="whatsapp" src="assets/copy.png"></ion-button>
-              </div>
-            </ion-card-content>
-          </ion-card>
-        </ion-item>
-      </ion-item-group>
-    </ion-grid>
+  <ion-item-group *ngIf="bool2">
+    <ion-item *ngFor="let p of postsnew">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>
+            {{ p['data']['title'] }}
+          </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          {{ p['data']['shortText'] }}
+          <ng-container >
+            <img src="{{p['data']['thumbnail']}}">
+          </ng-container>
+          <!--p>{{ p['data']['permalink'] }}</p-->
+          <div>
+            <ion-button (click)="copyToClipboard(p['data']['permalink'])"><img id="whatsapp"
+                src="assets/whatsapp--v1.png"></ion-button>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-item-group>
+
+
+  <ion-infinite-scroll threshold="5%" (ionInfinite)="loadMore($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
 </ion-content>
