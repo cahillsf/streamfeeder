@@ -228,6 +228,11 @@ export class FolderPage implements OnInit {
 
   }
 
+  async createPost() {
+    var myModal = await this.modalCtrl.create({component: PostModalPage});
+    return await myModal.present();
+  }
+  
   getTrendingPosts(){
     // this.bool = true;
     // const httpOptions = {
