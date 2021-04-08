@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class=postTitle>Create A New Post</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="createNewPost()">
+    <ion-item>
+      <ion-label class="postLabel">Post Title:</ion-label>
+      <ion-input type="text" placeholder="My Title" class="input"></ion-input>
+    </ion-item>
+    <ion-item class="postBody">
+      <ion-label class="postLabel">Post Body: </ion-label>
+      <ion-textarea type="text" placeholder="My Text" class="input"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label class="postLabel">Image (optional): </ion-label>
+      <ion-input type="file" class="input"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label class="postLabel">Subreddit (optional): </ion-label>
+      <ion-input type="text" placeholder="r/all" class="input"></ion-input>
+    </ion-item>
+  </form>
+  <ion-button (click)="createNewPost()">Create Post</ion-button>
+
+  <!-- ESCAPE FUNCTION DOES NOT EXIST. IT IS JUST A PLACEHOLDER -->
+  <ion-button (click)="escape()">Cancel</ion-button>
+</ion-content>
