@@ -28,8 +28,8 @@ const routes: Routes = [
     loadChildren: () => import('./saved/saved.module').then( m => m.SavedPageModule)
   },
   {
-    path: 'comments',
-    loadChildren: () => import('./modals/comments/comments.module').then( m => m.CommentsPageModule)
+    path: 'post-modal',
+    loadChildren: () => import('./post-modal/post-modal.module').then( m => m.PostModalPageModule)
   },
 ];
 
