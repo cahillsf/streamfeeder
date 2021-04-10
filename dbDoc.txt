@@ -1,6 +1,3 @@
-IN YOUR LOCAL MYSQL ENVIRONMENT CREATE A DATABASE
-
-database: streamfeeder 
 
 CREATE THIS USER 
 user: 'streamfeeder_admin'@'localhost'

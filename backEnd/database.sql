@@ -1,4 +1,6 @@
-CREATE DATABASE streamfeeder
+CREATE DATABASE streamfeeder;
+
+USE streamfeeder;
 
 CREATE TABLE user(
     UserID INT NOT NULL,
@@ -6,7 +8,9 @@ CREATE TABLE user(
     Fname VARCHAR(25) NOT NULL,
     Lname VARCHAR(25) NOT NULL,
     Email VARCHAR(100) NOT NULL,
-    PRIMARY KEY(UserID)
+    PRIMARY KEY(UserID),
+    FOREIGN KEY(PlatformID),
+        REFERENCES socialmediaplatforms(PlatformID)
 );
 
 CREATE TABLE socialmediaplatforms(
@@ -15,7 +19,7 @@ CREATE TABLE socialmediaplatforms(
     Name VARCHAR(25),
     Scope VARCHAR(200),
     PRIMARY KEY(PlatformID),
-    FOREIGN KEY (UserID)
+    FOREIGN KEY(UserID)
         REFERENCES user(UserID)
 );
 
@@ -26,7 +30,7 @@ CREATE TABLE settings(
     Permissions BIT,
     Notifications BIT,
     PRIMARY KEY(SettingsID),
-    FOREIGN KEY (UserID)
+    FOREIGN KEY(UserID)
         REFERENCES user(UserID)
 );
 
@@ -38,6 +42,14 @@ CREATE TABLE paymentinfo(
     CardNumber INT,
     Address VARCHAR(100),
     PRIMARY KEY(CardID),
-    FOREIGN KEY (UserID)
+    FOREIGN KEY(UserID)
         REFERENCES user(UserID)
+);
+
+CREATE TABLE userplatform(
+    PRIMARY KEY(UserPlatformID),
+    FOREIGN KEY(UserID)
+        REFERENCES user(UserID),
+    FOREIGN KEY(PlatformID)
+        REFERENCES socialmediaplatforms(PlatformID)
 );
