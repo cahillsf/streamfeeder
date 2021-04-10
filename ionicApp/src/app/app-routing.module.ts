@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'saved',
     loadChildren: () => import('./saved/saved.module').then( m => m.SavedPageModule)
   },
+  {
+    path: 'post-modal',
+    loadChildren: () => import('./post-modal/post-modal.module').then( m => m.PostModalPageModule)
+  },
 ];
 
 @NgModule({

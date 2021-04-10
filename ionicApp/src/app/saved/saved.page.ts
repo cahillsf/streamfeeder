@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RedditServiceService } from '../services/reddit-service.service';
 import {HttpClient, HttpClientModule, HttpHeaders} from '@angular/common/http'
+import { CookieService} from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-saved',
@@ -16,7 +17,7 @@ export class SavedPage implements OnInit {
   public redditData;
   public child;
 
-  constructor(public redditServe: RedditServiceService, public httpClient: HttpClient) {
+  constructor(public redditServe: RedditServiceService, public httpClient: HttpClient, private cookieService: CookieService) {
     this.folder2 = "STREAMFEEDER"
    }
 
@@ -32,7 +33,7 @@ export class SavedPage implements OnInit {
     const httpOptions = {
       headers: new HttpHeaders({
         'Content-Type': 'application/x-www-form-urlencoded',
-        'Authorization': 'Bearer '+ this.userAppAuth,
+        'Authorization': 'Bearer '+ (this.cookieService.get('redditUserAuth')),
         }),
       };
       this.httpClient.get('https://oauth.reddit.com/api/v1/me', httpOptions)
@@ -43,27 +44,54 @@ export class SavedPage implements OnInit {
         this.userName = data['name'];
         //this.savedPosts = data['data']['children'];
         this.getSavedPosts();
+        //this.getPostedPosts();
       
     });
 
   }
   getSavedPosts(){
-    //this.bool = true;
     const httpOptions = {
       headers: new HttpHeaders({
         'Content-Type': 'application/x-www-form-urlencoded',
-        'Authorization': 'Bearer '+ this.userAppAuth,
+        'Authorization': 'Bearer '+ (this.cookieService.get('redditUserAuth')),
         }),
       };
       this.httpClient.get('https://oauth.reddit.com/user/'+ this.userName +'/saved', httpOptions)
       .subscribe(data => {
         this.redditData = data;
-        //this.gotPosts = true;
         console.log('my data: ', data);
-        //this.savedPosts = data['data']['children'];
         this.getPosts();
       
     });
+  }
+
+  getPostedPosts(){
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'Authorization': 'Bearer '+ (this.cookieService.get('redditUserAuth')),
+        }),
+      };
+      this.httpClient.get('https://oauth.reddit.com/user/'+ this.userName +'/submitted', httpOptions)
+      .subscribe(response => {
+        console.log('my response postedPosts: ', response);
+        //console.log('accessing  ', response['data']['data']['children'])
+        console.log("post: " + response['data']['children']);
+        var newPosts = response['data']['children'];
+        newPosts.forEach(element => {
+          if(element['data']['thumbnail'] == "self" || element['data']['thumbnail'] == "default"){
+            element['data']['hasPreview'] = false;
+          }
+          else{
+            element['data']['hasPreview'] = true;
+          }
+          element['data'] = this.addShortText(element['data']);
+          this.savedPosts.push(element);
+        });
+        
+      },
+      (err) => console.log('HTTP Error', err)
+      );
   }
 
   getPosts(){
@@ -85,6 +113,7 @@ export class SavedPage implements OnInit {
     //console.log(this.child);
     this.child = this.addShortText(this.child)
     this.gotPosts = true;
+    this.getPostedPosts();
 
   }
 
@@ -108,6 +137,54 @@ export class SavedPage implements OnInit {
       document.removeEventListener('copy', null);
     });
     document.execCommand('copy');
+  }
+
+  testPlease(){
+    //this.bool = true;
+    let place = "US";
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/x-www-form-urlencoded',
+        }),
+      };
+  
+    this.httpClient.get('http://localhost:8080/postNewComment', httpOptions)
+    .subscribe(data => {
+      console.log('my data: ', data);
+    });
+    
+  }
+
+  testCommentsPlease(){
+    //this.bool = true;
+    let place = "US";
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/x-www-form-urlencoded',
+        }),
+      };
+  
+    this.httpClient.get('http://localhost:8080/getComments', httpOptions)
+    .subscribe(data => {
+      console.log('my data: ', data);
+    });
+  }
+
+  commentOnThis(postName){
+    console.log(postName);
+    const postdata = `{"postName":"${postName}", "message":"oy mate"}`;
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+        // 'Authorization': 'Bearer '+ this.userAppAuth,
+        }),
+      };
+      this.httpClient.post('http://localhost:8080/postNewComment', postdata ,httpOptions)
+      .subscribe((response) => {
+        console.log('my response: ', response);
+      },
+      (err) => console.log('HTTP Error', err)
+    );
   }
 
 

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RedditServiceService } from '../services/reddit-service.service';
 import {HttpClient, HttpClientModule, HttpHeaders} from '@angular/common/http'
+import { CookieService} from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-inbox',
@@ -13,12 +14,12 @@ export class InboxPage implements OnInit {
   public folder2: string;
   public userAppAuth: string;
 
-  constructor(public redditServe: RedditServiceService, public httpClient: HttpClient) {
+  constructor(public redditServe: RedditServiceService, public httpClient: HttpClient, private cookieService: CookieService) {
     this.folder2 = "STREAMFEEDER"
    }
 
   ngOnInit() {
-    console.log(this.redditServe.userAppAuth);
+    console.log(this.cookieService.get('redditUserAuth'));
     //console.log(this.redditServe.messages);
     this.userAppAuth = this.redditServe.userAppAuth;
     this.getMessages();
@@ -29,7 +30,7 @@ export class InboxPage implements OnInit {
     const httpOptions = {
       headers: new HttpHeaders({
         'Content-Type': 'application/x-www-form-urlencoded',
-        'Authorization': 'Bearer '+ this.userAppAuth,
+        'Authorization': 'Bearer '+ (this.cookieService.get('redditUserAuth')),
         }),
       };
       this.httpClient.get('https://oauth.reddit.com/message/inbox', httpOptions)
@@ -38,7 +39,7 @@ export class InboxPage implements OnInit {
         console.log('my data: ', data);
         this.messages = data['data']['children'];
       
-  });
+    });
   }
 
 

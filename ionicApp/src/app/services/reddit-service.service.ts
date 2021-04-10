@@ -23,7 +23,7 @@ export class RedditServiceService {
     this.userAppAuth = appAuth;
   }
 
-authorizeApp(){
+  authorizeApp(){
     const httpOptions = {
       headers: new HttpHeaders({
         'Content-Type': 'application/x-www-form-urlencoded',

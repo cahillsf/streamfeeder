@@ -10,6 +10,8 @@
     <ion-buttons slot="end" color="secondary">
       <ion-button color="primary" fill="outline" [routerLink]="['/login']">Login</ion-button>
       <ion-button color="primary" fill="outline" id="redditLogin">Reddit Login</ion-button>
+      <ion-button color="primary" fill="outline" id="testing" (click)="testPlease()">Test Comment Please</ion-button>
+      <ion-button color="primary" fill="outline" id="testing" (click)="testCommentsPlease()">See Comment Please</ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -31,6 +33,7 @@
             <!--p>{{ p['data']['permalink'] }}</p-->
             <div>
               <ion-button (click)="copyToClipboard(s['data']['permalink'])"><img id="whatsapp" src="assets/copy.png"></ion-button>
+              <ion-button (click)="commentOnThis(s['data']['name'])">Comment please</ion-button>
             </div>
           </ion-card-content>
         </ion-card>

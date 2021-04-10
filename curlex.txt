@@ -1,0 +1,11 @@
+You need to set your content-type to application/json. But -d sends the Content-Type application/x-www-form-urlencoded, which is not accepted on Spring's side.
+
+Looking at the curl man page, I think you can use -H:
+
+-H "Content-Type: application/json"
+Full example:
+
+curl --header "Content-Type: application/json" \
+  --request POST \
+  --data '{"id":1511}' \
+  http://localhost:8080/user
